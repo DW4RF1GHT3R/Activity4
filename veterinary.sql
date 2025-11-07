@@ -153,3 +153,10 @@ WHERE animalid IN (
         SELECT ownerid FROM owners WHERE ofirstname='Maria'
     )
 );
+
+SELECT a.name
+FROM appointments ap
+JOIN animals a ON ap.animalid = a.animalid
+GROUP BY ap.animalid
+ORDER BY COUNT(*) DESC
+LIMIT 1;
