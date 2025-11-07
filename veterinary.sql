@@ -144,3 +144,4 @@ WHERE dfirstname='Dr.Sofia';
 
 SELECT DISTINCT species FROM animals;
 
+SELECT SUM(totalamount) FROM invoices;
