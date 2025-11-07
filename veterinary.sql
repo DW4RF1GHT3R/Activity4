@@ -38,4 +38,9 @@ CREATE TABLE doctors(
     email VARCHAR(100)
 );
  
- 
+ CREATE TABLE invoices(
+    invoiceid INT PRIMARY KEY,
+    appointid INT,
+    totalamount DECIMAL(10,2),
+    paymentdate TIME
+);
