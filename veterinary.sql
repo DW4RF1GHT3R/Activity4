@@ -54,3 +54,16 @@ CREATE TABLE medicalrecords(
     prescription VARCHAR(255),
     notes TEXT
 );
+
+INSERT INTO owners(ownerid, ofirstname, olastname, address, phone, email)
+VALUES
+(1, 'Maria', 'Santos', 'Lipa City', '09171234501', 'maria.santos@example.com'),
+(2, 'Juan', 'Reyes', 'Batangas City', '09181234502', 'juan.reyes@example.com'),
+(3, 'Ana', 'Torres', 'San Jose', '09191234503', 'ana.torres@example.com'),
+(4, 'Luis', 'Gonzales', 'Malvar', '09201234504', 'luis.gonzales@example.com'),
+(5, 'Carmen', 'Dela Cruz', 'Lipa City', '09211234505', 'carmen.dc@example.com'),
+(6, 'Rafael', 'Mendoza', 'Sto. Tomas', '09221234506', 'rafael.mendoza@example.com'),
+(7, 'Elena', 'Flores', 'Tanauan', '09231234507', 'elena.flores@example.com'),
+(8, 'Marco', 'Rivera', 'Lipa City', '09241234508', 'marco.rivera@example.com'),
+(9, 'Sofia', 'Ramirez', 'San Jose', '09251234509', 'sofia.ramirez@example.com'),
+(10, 'Paolo', 'Luna', 'Batangas City', '09261234510', 'paolo.luna@example.com');
