@@ -145,3 +145,11 @@ WHERE dfirstname='Dr.Sofia';
 SELECT DISTINCT species FROM animals;
 
 SELECT SUM(totalamount) FROM invoices;
+
+SELECT COUNT(*) FROM appointments
+WHERE animalid IN (
+    SELECT animalid FROM animals
+    WHERE ownerid IN (
+        SELECT ownerid FROM owners WHERE ofirstname='Maria'
+    )
+);
